@@ -1,0 +1,22 @@
+quantum_scheduler:
+  backend_priority:
+    - name: "wukong_chip"
+      type: "superconducting"
+      qubits: 72
+      fidelity: 0.998
+    - name: "xanadu_borealis"
+      type: "photonics"
+      qubits: 216
+      fidelity: 0.992
+
+  job_management:
+    max_queue_size: 1000
+    timeout_seconds: 300
+    retry_attempts: 3
+
+  error_mitigation:
+    enabled: true
+    methods:
+      - "zero_noise_extrapolation"
+      - "probabilistic_error_cancellation"
+    calibration_interval: 3600
