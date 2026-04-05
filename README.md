@@ -1,15 +1,15 @@
-# Edge AI Guard
+# LiangShu (量枢)
 
-> Real-time AI Output Integrity Verifier (<100ms) | RISC-V + seL4 Microkernel + FPGA + Quantum Acceleration
+> The Quantum Pivot for Intelligent Clustering | Hybrid Quantum-Classical Framework on Origin Pilot
 
 © 2026 Chen Jianjian (Shenzhen) — Proprietary. All Rights Reserved.
 
 ---
 
 ## 中文标题  
-# 边缘AI守卫者（Edge AI Guard）
+# 量枢（LiangShu）
 
-> 实时AI输出完整性验证器（<100毫秒）｜RISC-V + seL4 微内核 + FPGA + 量子加速
+> 智能聚类的量子枢轴｜基于本源司南的量子-经典混合框架
 
 © 2026 陈剑剑（深圳）—— 专有软件，保留所有权利。
 
@@ -17,42 +17,50 @@
 
 ## Overview | 概述
 
-**Edge AI Guard** is a hardware-enforced integrity verification system that validates the authenticity and correctness of AI inference outputs at the edge—within **under 100 milliseconds**.  
-Built on a **trusted computing stack**: RISC-V secure core, seL4 microkernel, custom FPGA logic, and quantum-enhanced verification primitives.
+**LiangShu** is a production-oriented hybrid quantum-classical framework that implements **quantum-enhanced K-Means clustering** on real quantum hardware (Origin Pilot QPU).  
+It leverages **RY encoding**, **SWAP Test-based distance measurement**, and **classical optimization loops** to deliver verifiable clustering results with quantum advantage in feature space.
 
-**边缘AI守卫者** 是一套硬件强制的完整性验证系统，在边缘端对AI推理输出的真实性与正确性进行实时校验（**<100ms**）。  
-基于可信计算栈构建：RISC-V 安全核心、seL4 微内核、定制FPGA逻辑，以及量子增强验证原语。
+**量枢** 是一个面向落地的量子-经典混合框架，在真实量子硬件（本源司南 QPU）上实现**量子增强 K-Means 聚类**。  
+通过 **RY 编码**、**基于 SWAP Test 的距离计算** 与 **经典优化闭环**，在特征空间中提供具备量子优势的可验证聚类结果。
+
+---
+
+## Core Capabilities | 核心能力
+
+- ✅ **Quantum Distance Engine**: Measure data similarity via quantum state overlap.  
+- ✅ **Hybrid Execution Loop**: Mini-batch scheduling between CPU and QPU.  
+- ✅ **Error Mitigation**: Hardware-aware noise suppression for NISQ devices.  
+- ✅ **C++/Python Dual Interface**: High-performance core + easy-to-use API.  
+- ✅ **Origin Pilot Integration**: Fully compatible with Benyuan OS & QPanda 3.
+
+- ✅ **量子距离引擎**：通过量子态重叠度度量数据相似性  
+- ✅ **混合执行循环**：CPU 与 QPU 间的小批量协同调度  
+- ✅ **错误缓解机制**：面向 NISQ 设备的硬件感知降噪  
+- ✅ **C++/Python 双接口**：高性能核心 + 易用高层 API  
+- ✅ **本源司南集成**：完整兼容本源量子操作系统与 QPanda 3
 
 ---
 
 ## System Architecture | 系统架构
-[AI Model @ Edge Device]
+[Python Application Layer]
 ↓
-[seL4 Secure Partition: Verification Agent]
+[C++ Core: DataEncoder → QuantumDistanceCalculator → CentroidManager]
 ↓
-[RISC-V Trusted Core + FPGA Co-Processor]
-↓
-[Quantum Acceleration Unit → Origin Pilot OS → QPU]
-↓
-[Binary Integrity Decision: PASS / FAIL]
-- All verification logic runs in **isolated, non-bypassable hardware partitions**.  
-- Quantum module provides **information-theoretic guarantees** for distance-based anomaly detection.  
-- FPGA implements **low-latency cryptographic attestation** and I/O filtering.
+[QPanda 3 Runtime → Origin Pilot OS → Physical QPU]
+All quantum circuits are compiled, optimized, and executed under the **Benyuan Quantum OS** environment.
 
-- 所有验证逻辑运行于**隔离且不可绕过的硬件分区**中。  
-- 量子模块为基于距离的异常检测提供**信息论安全保证**。  
-- FPGA 实现**低延迟密码学认证**与 I/O 过滤。
+所有量子线路均在**本源量子操作系统**环境下编译、优化并执行。
 
 ---
 
 ## Licensing & Contact | 授权与联系
 
 This is **proprietary closed-source software**.  
-Commercial licensing, evaluation kits, or technical collaboration inquiries:  
+For commercial licensing, technical evaluation, or research collaboration:  
 📧 **chene2603@gmail.com**
 
 本项目为**专有闭源软件**。  
-商业授权、评估套件或技术合作请联系：  
+商业授权、技术评估或科研合作请联系：  
 📧 **chene2603@gmail.com**
 
 ---
