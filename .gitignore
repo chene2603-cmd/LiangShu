@@ -1,0 +1,87 @@
+# ==============================
+# LiangShu (量枢) — Proprietary Quantum Framework
+# © 2026 Chen Jianjian. All Rights Reserved.
+# DO NOT REMOVE: This file protects intellectual property.
+# ==============================
+
+# =============== 编译产物 ===============
+build/
+_build/
+CMakeCache.txt
+CMakeFiles/
+cmake-build-*/
+*.o
+*.obj
+*.a
+*.so
+*.dll
+*.dylib
+*.exe
+*.bin
+*.out
+*.dSYM/
+
+# =============== C++ 开发 ===============
+compile_commands.json
+*.gcda
+*.gcno
+*.profraw
+*.profdata
+
+# =============== Python ===============
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# =============== 量子硬件 & 日志 ===============
+/logs/
+*.log
+*.qlog
+*.qpanda_log
+origin_pilot_*.tmp
+quantum_device_cache/
+hardware_fingerprint.bin      # ← 关键！防止硬件特征泄露
+calibration_data.bin          # ← 敏感校准数据
+
+# =============== 配置与密钥 ===============
+config/local_config.yaml
+config/secrets.ini
+*.key
+*.pem
+*.env
+.DS_Store
+Thumbs.db
+
+# =============== IDE / 编辑器 ===============
+.vscode/
+.idea/
+*.swp
+*.swo
+*.sublime-project
+*.sublime-workspace
+tags
+cscope.out
+
+# =============== 其他临时文件 ===============
+*.tmp
+*.bak
+*.orig
+*.rej
+*~
